@@ -1,0 +1,154 @@
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-image: url(abstract-pastel-paper-cut-banner-background-simple-asymmetrical-wallpaper-suitable-for-templates-banners-cards-covers-web-pages-and-others-vector.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0%;
+            margin: 0%;
+        }
+        .space {
+            border: 1.6px solid wheat;
+            display: flex;
+            background-color: transparent;
+            backdrop-filter: blur(40px);
+            height: 10%;
+            position: relative;
+        }
+        .courses {
+            margin-left: 1%;
+            margin-top:14px;
+            border-radius: 8px;
+            color: white;
+            border: 2px solid palevioletred;
+            font-size: large;
+            padding: 10px;
+            height: 20px;
+            width: 65px;
+            background-color: palevioletred;
+        }
+        .courses:hover {
+            background-color: yellowgreen;
+            color: black;
+            transform: scale(1.11);
+            border: 1px solid white;
+        }
+        .list {
+            margin-top: 11px;
+            padding-left: 71%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .li:hover {
+            color: aquamarine;
+        }
+        .ol {
+            display: flex;
+        }
+        li {
+            padding-right: 30px;
+        }
+        .Heading {
+            font-size: 500%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .twoSpace {
+            display:inline-block;
+            border: 2px;
+            padding-left: 9%;
+            padding-top: 40px;
+        }
+        .Paragraph {
+            font-weight: 100;
+        }
+        .technology, .Tools {
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .box {
+            margin-left: 40px;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .ball {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: radial-gradient(circle, red, darkred);
+            animation: fall 2s infinite backwards ;
+        }
+        @keyframes fall {
+            0% { top: -50px; }
+            50% { top: 330px; }
+            100% { top: -50px; }
+        }
+    </style>
+
+    <body>
+        <div class="space">
+        <div class="C courses">Courses</div>
+        <div class="C list">
+            <ol class="ol">
+                <li class="li">About</li>
+                <li class="li">Work</li>
+                <li class="li">Content</li>
+                <li class="li">Blog</li>
+            </ol>
+        </div>
+        </div>
+
+        <div class="twospace about-container">
+        <div>
+        <div class="Heading">About Me</div>
+        <div class="Paragraph" style="font-family: cursive;">
+                Hi I am <b style="color: rgb(85, 85, 179);">HASEEB AHMED</b>, I am a front-end web developer. <br>
+                I am a programmer, now I am learning HTML,CSS. After that, <br>
+                I will learn JavaScript.
+        </div>
+        <br>
+        <hr>
+        <div class="technology" style="color: palevioletred;">Technologies:</div>
+        <div class="Slist">
+            <ul>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+                <li>OOP</li>
+                <li>REACT</li>
+            </ul>
+        </div>
+        <div class="Tools" style="color: palevioletred;">Tools:</div>
+        <div class="Tlist">
+            <ul>
+                <li>HTML Coding</li>
+                <li>CSS Designing</li>
+                <li>C++ Coding</li>
+                <li>REACT Web Developing</li>
+                </ul>
+        </div>
+        </div>
+        <div class="box">
+    <div class="ball" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="ball" style="left: 40%; animation-delay: 0.5s;"></div>
+    <div class="ball" style="left: 60%; animation-delay: 1s;"></div>
+    <div class="ball" style="left: 80%; animation-delay: 1.5s;"></div>
+</div>
+    </div>
+</body>
+</head>
+</html>
